@@ -1,0 +1,34 @@
+$main-content-color: navajowhite;
+
+body{
+	background-color: moccasin;
+}
+
+.menu{
+	background-color: $main-content-color;
+	width: 350px;
+	ul{
+		border: 2px solid white;
+		li{
+			list-style-type: none;
+			display: inline-block;
+			border-right: 1px solid black;
+			padding: 10px;
+		}	
+	}
+}
+
+.main{
+	background-color: oldlace;
+	width: 800px;
+	padding: 15px; 
+	ul{
+		background-color: mintcream;
+
+		li{
+			list-style-type: none;
+			color: red;
+			background-color: $main-content-color; 
+		}
+	}
+}
