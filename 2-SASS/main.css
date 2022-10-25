@@ -1,0 +1,37 @@
+body{
+	background-color: moccasin;
+}
+
+.menu{
+	background-color: navajowhite;
+	width: 350px;
+}
+
+.menu ul{
+	border: 2px solid white;
+	
+}
+
+.menu ul li
+{
+	list-style: none;
+    display: inline-block;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+.main{
+	background-color: oldlace;
+	width: 800px;
+	padding: 15px; 
+}
+
+.main ul{
+	background-color: mintcream;
+}
+
+.main ul li
+{
+	list-type: none;
+	background-color: navajowhite;
+}
