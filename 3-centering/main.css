@@ -1,2 +1,13 @@
-#main {
+body {
+	background-color: black;
+	color: yellow;
+	width: 500px;
+	
+	display: flex;
+	justify-content: center;
+}
+
+img{
+	width: 300px;
+	height: 300px;
 }

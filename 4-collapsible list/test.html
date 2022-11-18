@@ -1,0 +1,42 @@
+<html>
+	<style type='text/css'>
+		[type="checkbox"],
+		[type="checkbox"]:checked + label .plus,
+		[type="checkbox"] ~ ul,
+		[type="checkbox"] ~ label .minus
+		{
+			display: none;
+		}
+		[type="checkbox"]:checked ~ label .minus, 	
+		[type="checkbox"]:checked ~ ul
+		{
+			display: inline-block;
+		}
+	</style>
+	<body>
+		<div>
+			<input id="toggle1" type="checkbox" />
+			<label for="toggle1">
+				<span class="plus">+</span>
+				<span class="minus">-</span>
+			</label>
+			<ul>
+				<li>Test 1</li>
+				<li>Test 2</li>
+				<li>Test 3</li>
+			</ul>		
+		</div>
+		<div>
+			<input id="toggle2" type="checkbox" />
+			<label for="toggle2">
+				<span class="plus">+</span>
+				<span class="minus">-</span>
+			</label>
+			<ul>
+				<li>Test 1</li>
+				<li>Test 2</li>
+				<li>Test 3</li>
+			</ul>		
+		</div>
+	</body>
+</html>
