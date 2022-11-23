@@ -1,11 +1,11 @@
 <html>
 	<head>
 		<style>
-			#menu ul{
+			nav ul{
 				padding-left:0;
 			}
 		
-			#menu li{
+			nav li{
 			    background-color: gray;
 				color: white;
 				padding: 5px;
@@ -14,7 +14,7 @@
 				border-radius: 5px;
 			}
 		
-			.parenthetical{
+			aside{
 				font-style: italic;
 				font-size: small;
 				background-color: lightskyblue;
@@ -24,11 +24,11 @@
 				border-radius: 5px;
 				color: darkblue;
 			}
-			.section p{
+			article p{
 				font-size: medium;
 			}
 			
-			.section{
+			article{
 				background-color: blue;
 				padding:15px;
 				border-radius: 5px;
@@ -37,8 +37,8 @@
 		</style>
 	</head>
 	<body>
-		<div id="header">
-			<div id="menu">
+		<header>
+			<nav>
 				<ul>
 					<li>
 						Home
@@ -50,10 +50,10 @@
 						Contact Us
 					</li>
 				</ul>
-			</div>
-		</div>
-		<div id="main">
-			<div class="section">
+			</nav>
+		</header>
+		<main>
+			<article>
 				<h1>Dolorem ipsum</li>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum ligula et lectus lobortis suscipit. Praesent faucibus, ex a accumsan consequat, leo lectus scelerisque nulla, sed sagittis purus lectus vitae felis. Aliquam eget turpis placerat, malesuada elit a, pharetra ex. Proin id urna laoreet, blandit sapien eu, elementum magna. Sed ut pellentesque mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec condimentum maximus mauris, quis blandit eros tincidunt ut.
@@ -64,10 +64,19 @@
 				<p>
 					Sed massa orci, posuere eget venenatis at, ornare vitae sem. Aenean ullamcorper ipsum odio, in sagittis sapien lobortis ac. Aliquam at purus mi. Duis ut aliquet urna. Nulla vel neque et tortor eleifend venenatis vitae sit amet lectus. Nulla vitae ultrices quam. Sed finibus luctus massa dictum feugiat. Etiam placerat ex odio, vitae faucibus libero pretium sit amet. Proin quis sodales odio
 				</p>
-				<div class="parenthetical">
+				<aside>
 					This is all mangled Latin from a treatise on the nature of suffering - "no man loves suffering for its own sake"
-				</div>
-			</div>
-		</div>
+				</aside>
+			</article>
+			<article>
+				<h1>What I'm doing Today</h1>
+				<p>
+					<time datetime="2024-12-24">Today</time>, I'm spending the day with my family.
+				</p>
+			</article>
+		</main>
+		<footer>
+			Created on <time datetime="2024-11-22">November 11th, 2024</time>
+		</footer>
 	</body>
 </html>
