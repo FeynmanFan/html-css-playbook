@@ -13,6 +13,49 @@
 			width: 80%;
 			border-radius: 10px;
 		}
+		
+		@keyframes pulse{
+			0% {color: black; font-size: medium; font-weight:normal}
+			50% {color: red; font-size:large; font-weight: bold;}
+			100% {color: green; font-size:large; font-weight: bold;}
+		}
+		
+		@keyframes pulse-background{
+			0% {background-color: black; font-size: medium;left: 0; width: 250px; height: 250px; rotate: 0deg}
+			50% {background-color: red; font-size:large;left: 600px; width: 600px; height: 600px; rotate: 180deg}
+			100% {background-color: green; font-size:xxx-large;left: 800px; width: 800px; height: 800px; rotate: 359deg}
+		}
+
+		#english {
+			animation-name: pulse;
+			animation-duration: 5s;
+			animation-direction: alternate;
+			animation-iteration-count: 2;
+		}
+		
+		#deutsch {
+			animation-name: pulse;
+			animation-duration: 5s;
+			animation-direction: alternate;
+			animation-iteration-count: 2;
+			animation-delay: 10s;
+		}
+		
+		.square{
+			color: white;
+			padding:40px;
+			width: 250px;
+			height: 250px;
+			position: relative;
+			background-color:black;
+			animation: pulse-background 2s alternate infinite;
+		}
+		
+		#second{
+			animation-timing-function: linear;
+			animation-delay: 2s;
+		}
+		
 		</style>
 	</head>
 	<body>
@@ -20,15 +63,17 @@
 			<div>
 				<h1>Dolorem ipsum</h1>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum ligula et lectus lobortis suscipit. Praesent faucibus, ex a accumsan consequat, leo lectus scelerisque nulla, sed sagittis purus lectus vitae felis. Aliquam eget turpis placerat, malesuada elit a, pharetra ex. Proin id urna laoreet, blandit sapien eu, elementum magna. Sed ut pellentesque mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec condimentum maximus mauris, quis blandit eros tincidunt ut.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum ligula et lectus lobortis suscipit. Praesent faucibus, ex a accumsan consequat, leo lectus scelerisque nulla, sed sagittis purus lectus vitae felis. Aliquam eget turpis placerat, malesuada elit a, pharetra ex. Proin id urna laoreet, blandit sapien eu, elementum magna. Sed ut pellentesque mi. <span id="english">This bit right here is actually in English.</span> Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec condimentum maximus mauris, quis blandit eros tincidunt ut.
 				</p>
 				<p>
-					Mauris interdum suscipit sapien, vel placerat orci tempor sit amet. Curabitur auctor laoreet purus, non aliquam purus auctor tempor. Nulla ante tellus, hendrerit in luctus vel, hendrerit sit amet massa. Sed sed nunc dui. Donec cursus lorem eget dolor lacinia, vitae tincidunt tortor luctus. Aliquam interdum et turpis sit amet sollicitudin. Sed tincidunt malesuada auctor. Aliquam non suscipit risus, at eleifend risus. Sed condimentum ante metus, eu vehicula odio posuere non. Nullam posuere mattis posuere. Duis eu arcu varius, bibendum nisi et, aliquet neque. Mauris vitae justo nisl. Donec pharetra placerat quam, nec commodo tellus semper quis.
+					Mauris interdum suscipit sapien, vel placerat orci tempor sit amet. Curabitur auctor laoreet purus, non aliquam purus auctor tempor. Nulla ante tellus, hendrerit in luctus vel, hendrerit sit amet massa. Sed sed nunc dui. Donec cursus lorem eget dolor lacinia, vitae tincidunt tortor luctus. Aliquam interdum et turpis sit amet sollicitudin. Sed tincidunt malesuada auctor. Aliquam non suscipit risus, at eleifend risus. Sed condimentum ante metus, eu vehicula odio posuere non. Nullam posuere mattis posuere. <span id="deutsch">Das ist auf Deutsch</span>. Duis eu arcu varius, bibendum nisi et, aliquet neque. Mauris vitae justo nisl. Donec pharetra placerat quam, nec commodo tellus semper quis.
 				</p>
 				<p>
 					Sed massa orci, posuere eget venenatis at, ornare vitae sem. Aenean ullamcorper ipsum odio, in sagittis sapien lobortis ac. Aliquam at purus mi. Duis ut aliquet urna. Nulla vel neque et tortor eleifend venenatis vitae sit amet lectus. Nulla vitae ultrices quam. Sed finibus luctus massa dictum feugiat. Etiam placerat ex odio, vitae faucibus libero pretium sit amet. Proin quis sodales odio
 				</p>
 			</div>
+			<div id="first" class="square">This is the first square!!!</div>
+			<div id="second" class="square">This is the second square!!!</div>
 		</div>
 	</body>
 </html>
