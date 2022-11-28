@@ -21,9 +21,27 @@
 		}
 		
 		@keyframes pulse-background{
-			0% {background-color: black; font-size: medium;left: 0; width: 250px; height: 250px; rotate: 0deg}
-			50% {background-color: red; font-size:large;left: 600px; width: 600px; height: 600px; rotate: 180deg}
-			100% {background-color: green; font-size:xxx-large;left: 800px; width: 800px; height: 800px; rotate: 359deg}
+			0%, 7% {
+				transform: rotateZ(0);
+			  }
+			  15% {
+				transform: rotateZ(-15deg);
+			  }
+			  20% {
+				transform: rotateZ(10deg);
+			  }
+			  25% {
+				transform: rotateZ(-10deg);
+			  }
+			  30% {
+				transform: rotateZ(6deg);
+			  }
+			  35% {
+				transform: rotateZ(-4deg);
+			  }
+			  40%, 100% {
+				transform: rotateZ(0);
+			  }
 		}
 
 		#english {
@@ -49,6 +67,7 @@
 			position: relative;
 			background-color:black;
 			animation: pulse-background 2s alternate infinite;
+			transform-origin: 50% 5em;
 		}
 		
 		#second{
