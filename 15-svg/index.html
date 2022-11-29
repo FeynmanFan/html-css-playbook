@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<style>
+			svg{
+				width: 800px;
+				height: 800px;
+				border: 2px solid #3377FF;
+				margin: 10px auto;
+				display: block;
+			}
+			
+			circle{
+				fill: red;
+			}
+			
+			text{
+				fill: red;
+			}
+		</style>
+	</head>
+	<body>
+		<svg viewBox="0 0 800 800">
+			<g transform="scale(2, 2)" >
+				<circle style="fill:#B2BDD3;" cx="100" cy="100" r="100"></circle>
+				<text transform="translate(50, 50)" x="50" y="100">This is text</text>
+			</g>
+			<circle cx="100" cy="300" r="100"></circle>
+			<circle cx="100" cy="500" r="100"></circle>
+			<circle cx="100" cy="700" r="100"></circle>
+			<path fill="none" stroke-width="12px" stroke="blue" d="M400 0 L200 80 L300 200 L500 200 L600 80Z" />
+		</svg>
+	</body>
+</html>
