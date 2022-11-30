@@ -1,0 +1,26 @@
+div#main{
+	margin: 0 auto;
+	width: 600px;
+	text-align: center;
+}
+
+strong{
+	font-size: 150%;
+	font-weight: normal;
+}
+
+em{
+	font-style: normal;
+	color: red;
+	text-emphasis: double-circle purple;
+}
+
+/* https://stackoverflow.com/a/7912233/11027
+Wesley Murch
+*/
+.redacted{
+    color: black;
+    background-color: black;
+    white-space:nowrap;
+    border:1px dotted #555;
+}
