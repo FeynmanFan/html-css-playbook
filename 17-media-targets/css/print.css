@@ -1,0 +1,18 @@
+body{
+				background-image: none;
+				background-repeat: no-repeat;
+				background-size: 50%;
+			}
+			
+			#main{
+				background-color: none !important;
+				opacity: 100%;
+				padding: 20px;
+				border-radius: 5px;
+				height: 90%;
+			}
+			
+			h1:before {
+content: "\ Printed from www.nowhere.com! Check out our other nonsense Latin articles daily...";
+text-align: center !important;    
+}
