@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<style>
+			#chart{
+				display: flex;
+			}
+		
+			#chart div{
+				width:300px;
+				height:300px;
+				background-color: black;
+				margin: auto 10px 0;
+				color: white;
+				text-align: center;
+				font-size: xx-large;
+			}
+			
+			#chart div.bar1{
+				height: 100px;
+				background-color: red;
+			}
+			
+			#chart div.bar2{
+				height: 200px;
+				background-color: green;
+			}
+			
+			#chart div.bar4{
+				height: 400px;
+				background-color: blue;
+			}
+			
+			#chart div.bar8{
+				height: 800px;
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+		<!--
+			1,2,4,8
+			red, green, blue, orange
+		-->
+			<div id="chart">
+				<div class="bar1">1</div>
+				<div class="bar2">2</div>
+				<div class="bar4">4</div>
+				<div class="bar8">8</div>
+			</div>
+		</div>
+	</body>
+</html>
