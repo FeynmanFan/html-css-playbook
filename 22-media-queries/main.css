@@ -1,11 +1,9 @@
-@media screen and (max-width: 799px){
+@media print{
 	table{
-		font-size: larger;
-		/*display: none;*/
+		display: none;
 	}
 	
 	div.table{	
-		font-size: larger;
-		/*display: none;*/
+		display: none;
 	}
 }
