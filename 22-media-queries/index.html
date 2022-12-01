@@ -1,9 +1,16 @@
 <html>
 	<head>
 		<style>
+			table{
+				border-collapse: collapse;
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		
 			th{
 				background-color: gray;
 				color: antiquewhite;
+				text-align: left;
 			}
 			
 			tr:nth-child(even){
@@ -12,6 +19,50 @@
 			
 			tr:nth-child(odd){
 				background-color: #eeEEFF;
+			}
+			
+			td{
+				width: 25%;
+			}
+			
+			.tr:nth-child(even){
+				background-color: #eeeeee;
+			}
+			
+			.tr:nth-child(odd){
+				background-color: #eeEEFF;
+			}
+			
+			.table {
+			  display: flex;
+			  flex-flow: column nowrap;
+			  flex: 1 1 auto;
+			}
+
+			.thead .tr div {
+				background-color: gray;
+				color: antiquewhite;
+				text-align: -internal-center;
+				font-weight: bold;
+			}
+
+			.th > .td {
+			  white-space: normal;
+			  justify-content: center;
+			}
+
+			.tr {
+			  width: 100%;
+			  display: flex;
+			  flex-flow: row nowrap;
+			}
+
+			.tr div {
+			  display: flex;
+			  flex-flow: row nowrap;
+			  flex-grow: 1;
+			  flex-basis: 0;
+			  width: 25%;
 			}
 		</style>
 	</head>
@@ -95,7 +146,82 @@
 						</tr>
 					</tbody>
 				</table>
-				<p>
+				<div class="table">
+					<div class="thead">
+						<div class="tr">
+							<div>
+								Manufacturer
+							</div>
+							<div>
+								Year
+							</div>
+							<div>
+								Style
+							</div>
+							<div>
+								Name
+							</div>
+						</div>
+					</div>
+					<div class="tbody">
+						<div class="tr">
+							<div>
+								Nintendo
+							</div>
+							<div>
+								1981
+							</div>
+							<div>
+								Upright
+							</div>
+							<div>
+								Donkey Kong
+							</div>
+						</div>
+						<div class="tr">
+							<div>
+								Midway
+							</div>
+							<div>
+								1980
+							</div>
+							<div>
+								Upright
+							</div>
+							<div>
+								Pac-Man
+							</div>
+						</div>
+						<div class="tr">
+							<div>
+								Bally-Midway
+							</div>
+							<div>
+								1983
+							</div>
+							<div>
+								Environmental
+							</div>
+							<div>
+								Spy Hunter
+							</div>
+						</div>
+						<div class="tr">
+							<div>
+								Namco
+							</div>
+							<div>
+								1981
+							</div>
+							<div>
+								Upright
+							</div>
+							<div>
+								Galaga
+							</div>
+						</div>
+					</div>
+				</div>
 					<strong>lorem ipsum</strong> dolor sit amet, <em>consectetur adipiscing elit</em>. quisque fermentum ligula et lectus lobortis suscipit. praesent faucibus, ex a accumsan consequat, leo lectus scelerisque nulla, sed sagittis purus lectus vitae felis. aliquam eget turpis placerat, malesuada elit a, pharetra ex. proin id urna laoreet, blandit sapien eu, elementum magna. sed ut <span class="redacted">pellentesque</span> mi. interdum et malesuada fames ac ante ipsum primis in faucibus. donec condimentum maximus mauris, quis blandit eros tincidunt ut.
 				</p>
 				<p>
