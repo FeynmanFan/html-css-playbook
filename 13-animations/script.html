@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script type="text/javascript">
+		/* this doesn't actually produce exactly the same numbers as the wiggle script...
+		But it produces more accurate damping sinus behavior, so I'll call it successful
+		And once you strip out the initializers and the console.log lines...
+		It's four lines of script, like I had guessed, including one line of closing brackets
+		;)
+		*/
+		var seed = 15;
+		var everyOther = true;
+		
+		console.log(0);
+		while (Math.abs(seed) > 1){
+			seed *= -1;
+			console.log(seed);
+			if (everyOther) seed = Math.floor(seed * .66666666666666666666);
+		}
+		
+		console.log(0);
+		</script>
+	</head>
+</html>
